@@ -1,4 +1,6 @@
-# middleman-aria_current
+# middleman-transpath_aria_current
+
+Based on [Middleman Aria Current](https://github.com/thoughtbot/middleman-aria_current) from [Thoughtbot](https://github.com/thoughtbot), forked to be used with [Middleman Transpath](https://github.com/bastienrobert/middleman-transpath) by [Bastien Robert](https://github.com/bastienrobert).
 
 A [Middleman] extension for indicating a current (active) link using
 [`aria-current`][spec].
@@ -27,7 +29,7 @@ detailing its usage][article].
 1. Activate the extension in `config.rb`:
 
     ```ruby
-    activate :aria_current
+    activate :transpath_aria_current
     ```
 
 ## Usage

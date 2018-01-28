@@ -2,12 +2,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "middleman-aria_current"
-  s.version     = "0.1.1"
+  s.name        = "middleman-transpath_aria_current"
+  s.version     = "0.1"
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Tyson Gach", "Sean Doyle"]
-  s.email       = ["tyson@thoughtbot.com", "sean@thoughtbot.com"]
-  s.homepage    = "https://github.com/thoughtbot/middleman-aria_current"
+  s.authors     = ["Tyson Gach", "Sean Doyle", "Bastien Robert"]
+  s.email       = ["tyson@thoughtbot.com", "sean@thoughtbot.com", "bastienrobert@outlook.com"]
+  s.homepage    = "https://github.com/bastienrobert/middleman-transpath_aria_current"
   s.summary     = <<-SUM
 A Middleman extension for indicating a current (active) link
 using `aria-current`.

@@ -1,1 +1,0 @@
-activate :aria_current
