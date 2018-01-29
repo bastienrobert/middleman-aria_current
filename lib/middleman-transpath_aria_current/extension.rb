@@ -20,7 +20,7 @@ class AriaCurrent < ::Middleman::Extension
         options.merge!("aria-current" => aria_current)
       end
 
-      link_to(text, t("paths.#{path}"), options)
+      t("paths.#{path}") != "" ? link_to(text, t("paths.#{path}"), options) : link_to(text, '/', options)
     end
     def is_current_path?(*args)
       args.each do |arg|
