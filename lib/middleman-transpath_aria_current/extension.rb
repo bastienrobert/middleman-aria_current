@@ -20,7 +20,10 @@ class AriaCurrent < ::Middleman::Extension
         options.merge!("aria-current" => aria_current)
       end
 
-      t("paths.#{path}") != "" ? link_to(text, t("paths.#{path}"), options) : link_to(text, '/', options)
+      url = t("paths.#{path}")
+      I18n.default_locale != locale ? url = locale.to_s + '/' + url : nil
+
+      t("paths.#{path}") != "" ? link_to(text, url, options) : link_to(text, '/', options)
     end
     def is_current_path?(*args)
       args.each do |arg|
